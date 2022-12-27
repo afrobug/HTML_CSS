@@ -1,5 +1,5 @@
 let arr = [2, 3, 4, 6, 77, 33, 22];
-let num = 2;
+let num = 22;
 
 let result = arr.find(checkNum);
 
