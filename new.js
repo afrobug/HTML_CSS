@@ -1,10 +1,11 @@
 let arr = [2, 3, 4, 6, 77, 33, 22];
-let num = 22;
+const num = 2; //declare 
+//assignment var let const
 
 let result = arr.find(checkNum);
 
-function checkNum(numcheck) {
-    return numcheck === num;
+function checkNum(num) {
+    return num = 4;
 }
 console.log(Boolean(result));
 
