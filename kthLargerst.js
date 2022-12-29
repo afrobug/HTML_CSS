@@ -1,16 +1,8 @@
-function Kth_greatest_in_array(arr, k) {
-    for (var i = 0; i < k; i++) {
-        var max_index = i,
-            tmp = arr[i];
-        for (var j = i + 1; j < arr.length; j++) {
-            if (arr[j] > arr[max_index]) {
-                max_index = j;
-            }
-        }
-        arr[i] = arr[max_index];
-        arr[max_index] = tmp;
-    }
-    return arr[k - 1];
-}
-console.log(Kth_greatest_in_array([1, 2, 6, 4, 5], 1))
-console.log(Kth_greatest_in_array([-10, -25, -47, -36, 0], 1))
+const points = [40, 100, 1, 5, 25, 10];
+
+points.sort(function (a, b) { return a - b });
+let k = 1;
+let highest = points[k - 1];
+
+console.log(points);
+console.log(highest);
